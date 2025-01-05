@@ -15,6 +15,7 @@ import javax.swing.JTextField;
 
 import controller.ProductController;
 import model.Product;
+import java.awt.Toolkit;
 
 
 public class ProductForm  extends JFrame {
@@ -32,6 +33,7 @@ public class ProductForm  extends JFrame {
     private ProductList listView;
 
     public ProductForm(ProductController controller, ProductList listView) {
+    	setIconImage(Toolkit.getDefaultToolkit().getImage(ProductForm.class.getResource("/img/icons8-cart-26.png")));
         this.controller = controller;
         this.listView = listView;
 
@@ -39,7 +41,7 @@ public class ProductForm  extends JFrame {
         setSize(350, 250);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setLayout(new BorderLayout());
+        getContentPane().setLayout(new BorderLayout());
 
         JPanel formPanel = new JPanel(new GridLayout(4, 2));
 
@@ -67,7 +69,7 @@ public class ProductForm  extends JFrame {
         availablePanel.add(availableNo);
         formPanel.add(availablePanel);
 
-        add(formPanel, BorderLayout.CENTER);
+        getContentPane().add(formPanel, BorderLayout.CENTER);
 
         saveButton = new JButton("Salvar");
         saveButton.addActionListener(new ActionListener() {
@@ -76,7 +78,7 @@ public class ProductForm  extends JFrame {
                 saveProduct();
             }
         });
-        add(saveButton, BorderLayout.SOUTH);
+        getContentPane().add(saveButton, BorderLayout.SOUTH);
     }
 
     private void saveProduct() {
