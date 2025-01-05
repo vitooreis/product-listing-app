@@ -42,10 +42,10 @@ public class ProductList extends JFrame {
 		
 		addButton.addActionListener(e -> new ProductForm(controller, this).setVisible(true));
 		
-		// Painel para os botoes
+		
 		JPanel buttonPanel = new JPanel();
 		buttonPanel.add(addButton);
-		buttonPanel.add(clearButton); //  Adiciona o botão "Limpar" ao painel
+		buttonPanel.add(clearButton);
 		getContentPane().add(buttonPanel, BorderLayout.SOUTH);
 		
 		clearButton.addActionListener(e -> clearData());
