@@ -85,14 +85,14 @@ public class ProductForm  extends JFrame {
         double value = Double.parseDouble(valueField.getText());
         boolean available = availableYes.isSelected();
 
-        // Usa o controller para adicionar o produto
+       
         Product product = new Product(name, description, value, available);
         controller.addProduct(product);
 
-        // Atualiza a lista de produtos na view
+        
         listView.updateList();
 
-        // Fecha o formulário após salvar
+        
         dispose();
     }
 }
