@@ -66,7 +66,7 @@ public class ProductList extends JFrame {
 		
 		productTable.setModel(new DefaultTableModel(data, columnNames));
 	}	
-		
+	
 	private void clearData() {
 		controller.clearProducts();
 		updateList();
