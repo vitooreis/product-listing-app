@@ -1,22 +1,18 @@
 #  Sistema de Cadastro e Listagem de Produtos
 
-Este projeto foi desenvolvido para criar uma aplicação funcional de cadastro e listagem de produtos, combinando eficiência, organização e uma interface gráfica intuitiva.
-
-🔹 Permite o registro detalhado de produtos, incluindo nome, descrição, preço e disponibilidade.
-🔹 Exibe a listagem ordenada dos produtos por valor, facilitando a visualização.
-🔹 Construído seguindo princípios de POO e Clean Code, garantindo código limpo, reutilizável e de fácil manutenção.
+Este projeto consiste em uma aplicação desktop desenvolvida em Java, que permite o cadastro e gerenciamento de produtos de forma intuitiva e eficiente. O sistema oferece uma interface gráfica amigável, construída com Swing, permitindo que o usuário cadastre, visualize e organize produtos de maneira prática.
 
 ## 📌 Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-**Linguagem:** Java
+**Java** - Linguagem principal do projeto.
 
-**Interface Gráfica:** Swing + WindowBuilder
+**Swing + WindowBuilder** - Para criação da interface gráfica.
 
-**Paradigma:** Programação Orientada a Objetos (POO)
+**Programação Orientada a Objetos (POO)** - Para estruturação do código.
 
-**Boas Práticas:** Clean Code
+**Clean Code** - Para garantir código limpo e de fácil manutenção.
 
 
 ## ✅ Como rodar o projeto
@@ -44,19 +40,27 @@ java -cp bin application.Main
 
 ## ⚠️ Problemas enfrentados
 
-Durante o desenvolvimento, alguns desafios foram encontrados:
+Problema: Atualização dinâmica da interface.
 
-❌ Atualização dinâmica da interface: Ajustar a listagem em tempo real exigiu melhorias na manipulação dos componentes Swing.
-❌ Validação dos dados: Garantir que os campos fossem preenchidos corretamente e evitar registros inválidos exigiu a implementação de verificações robustas.
-❌ Melhoria na experiência do usuário: Refinar a interface para torná-la mais intuitiva e responsiva exigiu ajustes no layout.
+Descrição: Ajustar a listagem de produtos em tempo real exigiu melhorias na manipulação dos componentes Swing.
+
+Solução: Implementação de um modelo de dados para atualizar a interface conforme novas entradas.
+
+---
+
+Problema: Validação dos dados inseridos.
+
+Descrição: Foi necessário garantir que o usuário preencha corretamente os campos, evitando registros inválidos como preços negativos.
+
+Solução: Implementação de verificações de entrada antes de permitir o cadastro.
 
 
 ## ⏭️ Próximos passos
 
-🚀 Melhorar a interface gráfica, tornando-a mais moderna e responsiva.
-🚀 Implementar persistência de dados, permitindo que os produtos sejam armazenados permanentemente.
-🚀 Adicionar filtros e pesquisa, para facilitar a busca por produtos específicos.
+Os próximos passos para evoluir este projeto incluem:
 
+- Melhoria na interface gráfica, tornando-a mais moderna e responsiva.
+- Adição de filtros e pesquisa para facilitar a busca por produtos específicos.
 
 
 
