@@ -1,32 +1,69 @@
-##  Descrição do Projeto
+#  Sistema de Cadastro e Listagem de Produtos
 
-Este projeto foi desenvolvido com o objetivo de criar uma aplicação funcional para cadastro e listagem de produtos. Ele utiliza uma interface gráfica intuitiva, desenvolvida com a biblioteca Swing, que proporciona uma experiência de usuário eficiente e fácil de usar.
+Este projeto foi desenvolvido para criar uma aplicação funcional de cadastro e listagem de produtos, combinando eficiência, organização e uma interface gráfica intuitiva.
 
-Com este sistema, é possível realizar o cadastro detalhado de produtos, incluindo informações como nome, descrição, preço e disponibilidade, além de listar todos os produtos cadastrados de forma ordenada pelo valor, garantindo praticidade e organização.
+🔹 Permite o registro detalhado de produtos, incluindo nome, descrição, preço e disponibilidade.
+🔹 Exibe a listagem ordenada dos produtos por valor, facilitando a visualização.
+🔹 Construído seguindo princípios de POO e Clean Code, garantindo código limpo, reutilizável e de fácil manutenção.
 
-## Principais Funcionalidades
+## 📌 Tecnologias Utilizadas
 
-* Cadastro de Produtos: Permite incluir nome, descrição, preço e disponibilidade do produto.
-  
-* Listagem Ordenada: Exibe os produtos cadastrados ordenados pelo valor, para fácil visualização.
-  
-* Interface Gráfica: Desenvolvida com Java Swing, proporciona um design simples e direto.
-  
-* Uso de POO (Programação Orientada a Objetos): Estrutura limpa e organizada, com foco na reutilização de código e boas práticas.
-  
-* Aplicação de Clean Code: Código legível, organizado e de fácil manutenção.
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Tecnologias Utilizadas
+**Linguagem:** Java
 
-* Linguagem: Java
+**Interface Gráfica:** Swing + WindowBuilder
 
-* Biblioteca: Swing (para construção da interface gráfica)
+**Paradigma:** Programação Orientada a Objetos (POO)
 
-* Ferramenta: WindowBuilder (para criação visual de interfaces gráficas)
+**Boas Práticas:** Clean Code
 
-* Paradigma: Programação Orientada a Objetos (POO)
 
-* Boas Práticas: Clean Code
+## ✅ Como rodar o projeto
+
+Opção 1: Usando uma IDE (Recomendado)
+
+1. Clone o repositório para sua máquina:
+   ```bash
+   git clone https://github.com/vitooreis/product-listing-app.git
+   ```
+2. Abra o projeto em sua IDE favorita (VS Code, IntelliJ, Eclipse, etc.).
+3. Execute a classe principal → Agenda.java.
+
+
+Opção 2: Pelo terminal (sem IDE)
+Se preferir rodar sem uma IDE, siga estes passos:
+```bash
+git clone https://github.com/vitooreis/product-listing-app.git
+cd agenda-contatos
+mkdir -p bin  
+javac -d bin -sourcepath src src/application/Main.java  
+java -cp bin application.Main
+```
+
+
+## ⚠️ Problemas enfrentados
+
+Durante o desenvolvimento, alguns desafios foram encontrados:
+
+❌ Atualização dinâmica da interface: Ajustar a listagem em tempo real exigiu melhorias na manipulação dos componentes Swing.
+❌ Validação dos dados: Garantir que os campos fossem preenchidos corretamente e evitar registros inválidos exigiu a implementação de verificações robustas.
+❌ Melhoria na experiência do usuário: Refinar a interface para torná-la mais intuitiva e responsiva exigiu ajustes no layout.
+
+
+## ⏭️ Próximos passos
+
+🚀 Melhorar a interface gráfica, tornando-a mais moderna e responsiva.
+🚀 Implementar persistência de dados, permitindo que os produtos sejam armazenados permanentemente.
+🚀 Adicionar filtros e pesquisa, para facilitar a busca por produtos específicos.
+
+
+
+
+
+
+
+
 
 
 
